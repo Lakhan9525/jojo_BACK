@@ -56,7 +56,7 @@ router.get('/:id', async (req, res) => {
 // });
 
 router.patch('/:id', async (req, res) => {
-  const {account_id, car_name, car_color, Power, Speed, Year, Model, Price, Milegae, description_1, description_2, description_3, description_4, description_5} =req.body
+  const { car_name, car_color, Power, Speed, Year, Model, Price, Milegae, description_1, description_2, description_3, description_4, description_5} =req.body
   const {id}=req.params;
 
   try {
