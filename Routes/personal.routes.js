@@ -64,7 +64,7 @@ router.patch('/:id', async (req, res) => {
 
 
       {_id:id},
-      {account_id:account_id,
+      {
         car_name:car_name,
         car_color:car_color, 
         Price:Price, 
