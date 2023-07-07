@@ -19,6 +19,7 @@ const personalSchema = new mongoose.Schema({
   Power: { type: Number, required: true },
   Speed: { type:Number, required: true},
   Year: { type:Number, required: true},
+  Model: { type:Number, required: true},
   
   photo: { type: String },
   description_1: { type: String, required: true },
