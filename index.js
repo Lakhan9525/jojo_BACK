@@ -14,6 +14,7 @@ require("dotenv").config();
 
 
 const PersonalRouter = require("./Routes/personal.routes")
+const OemRouter=require("./Routes/oem.routes");
 
 
 
@@ -25,6 +26,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/register", PersonalRouter)
+app.use("/oem_models",OemRouter)
 
 app.get("/",(req,res)=>{
     res.send("HomePage");
